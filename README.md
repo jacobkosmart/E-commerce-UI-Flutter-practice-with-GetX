@@ -4,9 +4,10 @@
 
 ## 🗂 File Tree
 
+```markdown
 📦lib
 ┣ 📂model
-┃ ┗ 📜product.dart => Product 모델
+┃ ┗ 📜product.dart => **Product 모델**
 ┣ 📂pages => 총 2개의 페이지
 ┃ ┣ 📂details => details 페이지
 ┃ ┃ ┣ 📂components => Detail page Components
@@ -32,3 +33,4 @@
 ┃ ┗ 📜fetch_db.dart
 ┣ 📜constants.dart
 ┗ 📜main.dart
+```
