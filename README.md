@@ -170,3 +170,11 @@ Expanded(
   ),
 )
 ```
+
+## Reference
+
+Flutter Way - [https://www.youtube.com/watch?v=XBKzpTz65Io](https://www.youtube.com/watch?v=XBKzpTz65Io)
+
+NEWBEDEV - [https://newbedev.com/getx-flutter-gridview-code-example](https://newbedev.com/getx-flutter-gridview-code-example)
+
+Flutter office docs - [https://docs.flutter.dev/development/ui/animations/hero-animations](https://docs.flutter.dev/development/ui/animations/hero-animations)
