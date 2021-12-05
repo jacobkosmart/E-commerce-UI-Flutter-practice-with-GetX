@@ -22,6 +22,7 @@ class ItemCard extends StatelessWidget {
               color: product.color,
               borderRadius: BorderRadius.circular(16),
             ),
+            // Create Hero animation start point as Image
             child:
                 Hero(tag: "${product.id}", child: Image.asset(product.image!)),
           ),

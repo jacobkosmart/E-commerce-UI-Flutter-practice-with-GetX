@@ -1,13 +1,10 @@
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class DetailController extends GetxController {
   static DetailController get to => Get.find();
 
+  // Get Parmameter Index
   final productID = int.parse(Get.parameters["productID"]!);
-
-  // Color Dots selected
-  var isSelected = false;
 
   // CartCounter number
   RxInt numOfItems = 1.obs;
