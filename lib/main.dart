@@ -1,7 +1,10 @@
+import 'package:e_commerce_app_ui/constants.dart';
+import 'package:e_commerce_app_ui/pages/details/details_binding.dart';
+import 'package:e_commerce_app_ui/pages/details/details_page.dart';
+import 'package:e_commerce_app_ui/pages/home/home_binding.dart';
+import 'package:e_commerce_app_ui/pages/home/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_bottom_nav_sample/pages/dashboard/dashboard.dart';
-import 'package:getx_bottom_nav_sample/pages/dashboard/dashboard_binding.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,17 +17,23 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Demo',
+      title: 'E-commerce-UI-APP',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor),
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       initialRoute: "/",
       getPages: [
         GetPage(
           name: "/",
-          page: () => MyDashBoard(),
-          binding: DashboardBinding(),
+          page: () => HomePage(),
+          binding: HomeBinding(),
+        ),
+        GetPage(
+          name: "/details/:productID",
+          page: () => DetailPage(),
+          binding: DetailsBinding(),
         ),
       ],
     );

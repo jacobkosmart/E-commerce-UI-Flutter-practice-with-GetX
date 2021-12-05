@@ -1,5 +1,14 @@
-import 'package:get/get_state_manager/get_state_manager.dart';
+import 'package:get/get.dart';
 
 class HomeController extends GetxController {
-  final String title = "Home Page Tilte";
+  static HomeController get to => Get.find();
+
+  List<String> categories = ["Hand bag", "Jewellery", "Footwear", "Dresses"];
+
+  // default first item will be selected
+  RxInt selectedIndex = 0.obs;
+
+  void changeTabIndex(int value) {
+    selectedIndex.value = value;
+  }
 }
